@@ -8,8 +8,3 @@ env.unwrapped.activate_render()
 
 while True:
     check_env(env)
-
-
-
-
-
