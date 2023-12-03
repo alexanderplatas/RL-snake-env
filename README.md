@@ -1,6 +1,6 @@
 # RL - Snake Env
 
-![alt text](https://github.com/alexanderplatas/RL-snakeenv/example.png?raw=true)
+![alt text]([https://github.com/alexanderplatas/RL-snakeenv/example.png?raw=true](https://github.com/alexanderplatas/RL-snake-env/blob/master/example.png))
 
 ## Ficheros
 
@@ -20,10 +20,11 @@
 - test_model.py: Script para evaluar modelos.
 
     Forma de uso:
-  
-``
+
+```
 python3 test_model.py <ID>
-``
+```
+
 
 ### Other files
 - common.py: Contiene el método evaluate_policy()
