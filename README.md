@@ -1,6 +1,6 @@
 # RL - Snake Env
 
-![alt text]([https://github.com/alexanderplatas/RL-snakeenv/example.png?raw=true](https://github.com/alexanderplatas/RL-snake-env/blob/master/example.png))
+![alt text](https://github.com/alexanderplatas/RL-snake-env/blob/master/example.png?raw=true)
 
 ## Ficheros
 
