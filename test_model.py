@@ -35,5 +35,9 @@ try:
     else:
         print("Incorrect version")
 
-except: print("No parms")
+except KeyboardInterrupt:
+    print("  Interrupted")
+
+except Exception as error:
+    print("No params")
 

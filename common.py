@@ -15,9 +15,8 @@ def evaluate_policy(model, env, n_eval_episodes: int = 100):
         episode_steps = 0
         episode_reward = 0
         done = False
-        info = {}
 
-        obs, _ = env.reset()
+        obs, info = env.reset()
 
         while not done:
             action, _states = model.predict(obs)
@@ -30,15 +29,15 @@ def evaluate_policy(model, env, n_eval_episodes: int = 100):
         if not truncated:
             info['cause_of_death'] = 'No dead'
 
-        print(f"{n}:\t - Score: {info['score']} - Steps: {episode_steps} "
+        print(f"{n} -->  Score: {info['score']} - Steps: {episode_steps} "
               f"- Reward: {episode_reward} - Cause of death: {info['cause_of_death']}")
         total_reward += episode_reward
         total_steps += episode_steps
         total_score += info['score']
 
-    print(f"  - Average reward per episode: {total_reward / n_eval_episodes}")
+    print(f"\n  - Average reward per episode: {total_reward / n_eval_episodes}")
     print(f"  - Average steps per episode: {total_steps / n_eval_episodes}")
-    print(f"  - Average score per episode: {total_score / n_eval_episodes}")
+    print(f"  - Average score per episode: {total_score / n_eval_episodes}\n")
 
     env.unwrapped.set_render(False)
     cv2.destroyAllWindows()
