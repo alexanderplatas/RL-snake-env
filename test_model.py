@@ -33,11 +33,11 @@ try:
         evaluate_policy(ppo_model, env2, n_eval_episodes=10)
 
     else:
-        print("Incorrect version")
+        print(" Incorrect version")
 
 except KeyboardInterrupt:
     print("  Interrupted")
 
 except Exception as error:
-    print("No params")
+    print(" No params")
 
