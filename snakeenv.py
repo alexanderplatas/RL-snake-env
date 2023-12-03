@@ -264,5 +264,5 @@ class SnakeEnv(gym.Env):
 
         return observation, info
 
-    def activate_render(self):
-        self.render = True
+    def set_render(self, b):
+        self.render = b

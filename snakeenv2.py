@@ -37,7 +37,7 @@ class SnakeEnv2(gym.Env):
         self.done = False
 
         # Reward y Score
-        self.actual_reward, self.score = 0, 0
+        self.actual_reward, self.score = 0, 3
 
         # Posición de la serpiente y la manzana
         self.snake_head = [250, 250]
@@ -224,7 +224,7 @@ class SnakeEnv2(gym.Env):
         self.done = False
 
         # Reward y Score
-        self.actual_reward, self.score = 0, 0
+        self.actual_reward, self.score = 0, 3
 
         # Posición de la serpiente y la manzana
         self.snake_head = [250, 250]
@@ -259,5 +259,5 @@ class SnakeEnv2(gym.Env):
 
         return observation, info
 
-    def activate_render(self):
-        self.render = True
+    def set_render(self, b):
+        self.render = b
