@@ -56,6 +56,8 @@ class SnakeEnv(gym.Env):
 
     def step(self, action):
 
+        #################### Update Values ####################
+
         self.prev_actions.append(action)
         self.num_steps += 1
         info = {}
