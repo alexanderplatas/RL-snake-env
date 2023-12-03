@@ -30,7 +30,7 @@ def evaluate_policy(model, env, n_eval_episodes: int = 100):
         if not truncated:
             info['cause_of_death'] = 'No dead'
 
-        print(f"{n}:\t - Score: {info['score']} - Steps: {episode_steps} "
+        print(f"{n}:  - Score: {info['score']} - Steps: {episode_steps} "
               f"- Reward: {episode_reward} - Cause of death: {info['cause_of_death']}")
         total_reward += episode_reward
         total_steps += episode_steps
