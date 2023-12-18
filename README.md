@@ -1,6 +1,6 @@
 # RL - Snake Env
 
-![alt text](https://github.com/alexanderplatas/RL-snake-env/blob/master/example.png?raw=true)
+![alt text](https://github.com/alexanderplatas/RL-snake-env/blob/master/game_image.png?raw=true)
 
 ## Ficheros
 
