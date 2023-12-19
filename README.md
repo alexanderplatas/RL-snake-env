@@ -1,4 +1,4 @@
-# RL - Snake Env
+# Reinforcement Learning - Snake Environment
 
 ![alt text](https://github.com/alexanderplatas/RL-snake-env/blob/master/game_image.png?raw=true)
 
